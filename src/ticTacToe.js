@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState,useEffect } from 'react'
 import closeIcon from './icons/icons-close.svg'
 import roundIcon from './icons/icons-round.svg'
