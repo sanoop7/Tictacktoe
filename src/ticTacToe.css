@@ -1,0 +1,90 @@
+.ticTacToe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ticTacToe_window{
+    height: 20rem;
+    width: 20rem;
+    position: relative;
+}
+.ticTacToe_window_hide{
+    height: 20rem;
+    width: 20rem;
+    z-index: 1000;
+    background: #fff;
+    color: #009967;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+}
+.ticTacToe_grid{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.ticTacToe_wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    top: 20rem;
+    transition: 0.5s;
+}
+.show_wrapper{
+    top: 0;
+}
+.ticTacToe_cell{
+    background-color: black;
+    cursor: pointer;
+    width: 6.25rem;
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.ticTacToe_mark{
+    visibility: hidden;
+    position: absolute;
+}
+.showMark{
+    visibility:visible;
+}
+.ticTacToe_wrapper_mssg{
+    font-size: 2rem;
+    color: #009967;
+    font-family: cursive;
+}
+.tryAgain{
+    color: #c70025;
+}
+.Draw{
+    color: #0080b3;
+
+}
+.restart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.restartIcon{
+    width: 3rem;
+    cursor: pointer;
+    
+}
+.restartIcon:active{
+    border-radius: 5px;
+    background-color: #4d4647;
+    margin: 10px;
+}
